@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+p, a, label{
+    font-family: 'Barlow';
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2,h1 {
+    font-family: 'Rubik';
+    font-weight: 900;
+    margin-top: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: #000736;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.2));
+}
+
+.EscaTech-Logo {
+    width: 215px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+main {
+    height: 100%; 
+    margin-left: 270px;
+    border-left: 5px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+}
+
+
+main section{
+    align-items: center;
+    margin-top: 0;
+    padding-top: 20px;
+} 
+
+main section h2{
+    margin-top: 0;
+} 
+
+.NavHeader ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 25px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.NavHeader li {
+    display: flex;
+    align-items: center;
+}
+
+.NavHeader a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Rubik', bold;
+}
+
+.NavHeader li ion-icon{
+    margin-right: 5px;
+    height: 21px;
+}
+
+.NavHeader li input {
+    border-radius: 10px;
+}
+
+.NavHeader li button {
+    width: 80px;
+    height: 100%;
+    border-radius: 40px;
+    background: rgb(7, 50, 189)
+}
+
+.NavHeader li button a {
+    color: white;
+}
+
+.BarraLateral {
+    height: 90%;
+    width: 250px;
+    background-color: #04168b;
+    display: block;
+    position: fixed;
+    overflow: auto;  
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.BarraLateral ul li {
+    margin-bottom: 30px;
+}
+
+.BarraLateral ul {
+    padding-left: 0;
+}
+
+.BarraLateral ul h2 {
+    text-align: center;
+    color: rgb(91, 208, 255);
+    animation: RGB2 5s infinite ease-in-out;
+}
+
+.BarraLateral ul a {
+    padding-left: 40px;
+    color: white;
+}
+
+.ListaProductos {
+    max-width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ListaProductos li {
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.ListaProductos li img {
+    width: 250px;
+    height: 250px;
+    border: 4px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+    margin-bottom: 8px;
+}
+
+.ListaProductos li img:hover {
+    width: 270px;
+    height: 270px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));  
+}
+
+.ListaProductos li a {
+    color: rgb(1, 26, 110);
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+}
+.Productos {
+    overflow: hidden;
+    max-width: 1500px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    justify-content:center; 
+}
+
+footer {
+    background-color: #000736;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes RGB {
+    0% {
+        border-color: rgb(61, 3, 218);
+    }
+    20% {
+        border-color: rgb(91, 208, 255); 
+    }
+    40% {
+        border-color: rgb(0, 0, 255); 
+    }
+    60% {
+        border-color: rgb(86, 77, 204); 
+    }
+    80% {
+        border-color: rgb(0, 255, 255); 
+    }
+    100% {
+        border-color: rgb(15, 58, 197); 
+    }
+}
+
+@keyframes RGB2 {
+    0% {
+        color: rgb(83, 177, 253);
+    }
+    20% {
+        color: rgb(91, 208, 255); 
+    }
+    40% {
+        color: rgb(255, 245, 178); 
+    }
+    60% {
+        color: rgb(64, 253, 152); 
+    }
+    80% {
+        color: rgb(0, 255, 255); 
+    }
+    100% {
+        color: rgb(93, 167, 209); 
+    }
+} 
+
+@keyframes RGB3 {
+    0% {
+        background-color: rgb(61, 3, 218);
+    }
+    20% {
+        background-color: rgb(91, 208, 255); 
+    }
+    40% {
+        background-color: rgb(0, 0, 255); 
+    }
+    60% {
+        background-color: rgb(86, 77, 204); 
+    }
+    80% {
+        background-color: rgb(0, 255, 255); 
+    }
+    100% {
+        background-color: rgb(15, 58, 197); 
+    }
+} 
+
+@keyframes BlackWhite {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    20% {
+        color: rgb(0, 0, 0);
+    }
+    40% {
+        color: rgb(255, 255, 255);
+    }
+    60% {
+        color: rgb(255, 255, 255);
+    }
+    80% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+} 
+
+.BotonRegistrar {
+    background-color: rgb(61, 3, 218);
+    animation: RGB3 10s infinite ease-in-out;
+}
+
+.BotonRegistrar a {
+    color: white;
+    animation: BlackWhite 10s infinite ease-in-out;
+}

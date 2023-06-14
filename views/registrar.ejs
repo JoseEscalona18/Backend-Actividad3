@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ingresar a EscaTech CA</title>
+		<link rel="icon" href="../styles/images/eCA.png">
+        <link rel="stylesheet" href="../styles/loginyregister.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="EscaTech-Logo">
+                <a href="index.html"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA"> </a>
+            </div>
+
+            <nav class="NavHeader">
+                <ul>
+                    <li>
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="text" placeholder="Buscar" style="text-indent: 10px;">
+                    </li>
+
+                    <li> <a href="index.html">Inicio</a> </li>
+
+                    <li> <a href="productos.html">Productos</a> </li>
+
+                    <li> <a href="#">Contacto</a> </li>
+
+                    <li> <button><a href="ingresar.html">Acceder</a></button> </li>
+                    
+                    <li> <button class="BotonRegistrar"><a href="registrar.html">Registrar</a></button></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+
+            <video src="/images/Azulfondo.mp4" autoplay="true" muted="true" loop="true"></video>
+
+            <section>
+
+                <div class="centro2">
+
+                    <div>
+
+                        <form action="" method="POST">
+                            <h2>Registrar</h2>
+
+                            <div class="cajastexto">
+
+                                <ion-icon name="text-outline"></ion-icon>
+                                <input type="text" name="Nombre" required>
+                                <label for="">Nombre</label>
+
+                            </div>
+
+                            <div class="cajastexto">
+
+                                <ion-icon name="id-card-outline"></ion-icon>
+                                <input type="text" name="Ci" required>
+                                <label for="">Cedula</label>
+
+                            </div>
+                            
+                            <div class="cajastexto">
+
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type="email" name="Correo" required>
+                                <label for="">Correo</label>
+
+                            </div>
+                            
+                            <div class="cajastexto">
+
+                                <ion-icon name="person-outline"></ion-icon>
+                                <input type="text" name="Usuario" required>
+                                <label for="">Usuario</label>
+
+                            </div>
+
+                            <div class="cajastexto">
+
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input type="password" name="Contraseña" required>
+                                <label for="">Contraseña</label>
+
+                            </div>
+
+                            <button type="submit">Registrar</button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+			<p>Derechos reservados &copy; 2023 Tienda de tecnología</p>
+		</footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

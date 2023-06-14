@@ -1,0 +1,289 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #000736;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.2));
+}
+
+.EscaTech-Logo {
+    width: 215px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.NavHeader ul {
+    list-style: none;
+    margin: 0;
+    margin-right: 25px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+.NavHeader li {
+    display: flex;
+    align-items: center;
+}
+
+.NavHeader a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Rubik', bold;
+}
+
+.NavHeader li ion-icon{
+    margin-right: 5px;
+    height: 21px;
+}
+
+.NavHeader li input {
+    border-radius: 10px;
+}
+
+.NavHeader li button {
+    width: 80px;
+    height: 100%;
+    border-radius: 40px;
+    background: rgb(7, 50, 189)
+
+}
+
+.NavHeader li button a {
+    color: white;
+}
+
+p, a, label{
+    font-family: 'Barlow';
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2,h1 {
+    font-family: 'Rubik';
+    font-weight: 900;
+    margin-top: 0;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+}
+.centro{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(22, 15, 15, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #abe2fd, #E0F2FB, #abe2fd);
+    border: 5px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+    filter: drop-shadow(2px 5px 4px rgba(0, 0, 0, 5));
+}
+
+.centro button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: rgb(7, 50, 189);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.centro2{
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(22, 15, 15, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #abe2fd, #E0F2FB, #abe2fd);
+    border: 5px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+    filter: drop-shadow(2px 5px 4px rgba(0, 0, 0, 5));
+}
+
+.centro2 button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: rgb(7, 50, 189);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2em;
+    color: #000000;
+    text-align: center;
+}
+.cajastexto{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #000000;
+}
+.cajastexto label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.cajastexto input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #000000;
+}
+.cajastexto ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #000000;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+
+
+@keyframes RGB {
+    0% {
+        border-color: rgb(61, 3, 218);
+    }
+    20% {
+        border-color: rgb(91, 208, 255); 
+    }
+    40% {
+        border-color: rgb(0, 0, 255); 
+    }
+    60% {
+        border-color: rgb(86, 77, 204); 
+    }
+    80% {
+        border-color: rgb(0, 255, 255); 
+    }
+    100% {
+        border-color: rgb(15, 58, 197); 
+    }
+} 
+
+@keyframes RGB3 {
+    0% {
+        background-color: rgb(61, 3, 218);
+    }
+    20% {
+        background-color: rgb(91, 208, 255); 
+    }
+    40% {
+        background-color: rgb(0, 0, 255); 
+    }
+    60% {
+        background-color: rgb(86, 77, 204); 
+    }
+    80% {
+        background-color: rgb(0, 255, 255); 
+    }
+    100% {
+        background-color: rgb(15, 58, 197); 
+    }
+} 
+
+@keyframes BlackWhite {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    20% {
+        color: rgb(0, 0, 0);
+    }
+    40% {
+        color: rgb(255, 255, 255);
+    }
+    60% {
+        color: rgb(255, 255, 255);
+    }
+    80% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+} 
+
+.BotonRegistrar {
+    background-color: rgb(61, 3, 218);
+    animation: RGB3 10s infinite ease-in-out;
+}
+
+.BotonRegistrar a {
+    color: white;
+    animation: BlackWhite 10s infinite ease-in-out;
+}
+
+video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+footer {
+    background-color: #000736;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

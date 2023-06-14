@@ -1,0 +1,530 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #000736;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.2));
+}
+
+@keyframes RGB {
+    0% {
+        border-color: rgb(61, 3, 218);
+    }
+    20% {
+        border-color: rgb(91, 208, 255); 
+    }
+    40% {
+        border-color: rgb(0, 0, 255); 
+    }
+    60% {
+        border-color: rgb(86, 77, 204); 
+    }
+    80% {
+        border-color: rgb(0, 255, 255); 
+    }
+    100% {
+        border-color: rgb(15, 58, 197); 
+    }
+} 
+
+@keyframes RGB2 {
+    0% {
+        color: rgb(83, 177, 253);
+    }
+    20% {
+        color: rgb(91, 208, 255); 
+    }
+    40% {
+        color: rgb(255, 245, 178); 
+    }
+    60% {
+        color: rgb(64, 253, 152); 
+    }
+    80% {
+        color: rgb(0, 255, 255); 
+    }
+    100% {
+        color: rgb(93, 167, 209); 
+    }
+} 
+
+p, a, label{
+    font-family: 'Barlow';
+    font-weight: 600;
+}
+
+h2,h1 {
+    font-family: 'Rubik';
+    font-weight: 900;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 25px;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 100%;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Rubik', bold;
+}
+
+nav li ion-icon{
+    margin-right: 5px;
+    height: 21px;
+}
+
+nav li input {
+    border-radius: 10px;
+}
+
+nav li button {
+    width: 80px;
+    height: 100%;
+    border-radius: 40px;
+    background: rgb(7, 50, 189)
+}
+
+nav li button a {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+main section{
+    align-items: center;
+} 
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+ul.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.productos li {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+
+ul.productos li:last-child {
+    margin-right: 0;
+}
+
+ul.categorias li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #000736;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+.EscaTech-Logo {
+  width: 215px;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.QuienesSomos {
+    overflow: hidden;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+  
+.QuienesSomos img {
+    float: left;
+    width: 40%; 
+    padding: 20px;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+}
+  
+.QuienesSomos h2 {
+    padding: 20px;
+    margin: 0;
+    height: auto;
+    align-items: center;
+}
+
+.QuienesSomos p {
+    padding-right: 20px;
+    margin-top: 0px;
+    text-align: justify;
+    flex: 1;
+}
+
+.Productosdestacados {
+    overflow: hidden;
+    max-width: 1500px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    justify-content:center;
+}
+
+.Productosdestacados img {
+    width: 180px;
+    height: 180px;
+    border: 4px solid rgb(61, 3, 218);
+    animation: RGB 5s infinite ease-in-out;
+    border-radius: 20px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+    margin-bottom: 8px;
+}
+
+.Productosdestacados img:hover {
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(2px 2px 6px rgba(255, 255, 255, 0.5));
+}
+
+.Productosdestacados ul {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+}
+
+.Productosdestacados li {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.Productosdestacados a {
+    color: rgb(1, 26, 110);
+    background-color: white;
+    display: block;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.Productosdestacados button {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.MostrarMas {
+    justify-content:center;
+    display: flex;
+    margin: 0;
+    padding-bottom: 20px;
+    color: white;
+    animation: RGB2 5s infinite ease-in-out;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+}
+
+.Categorias {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Categorias li {
+    width: calc(100% / 4);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    border-left: 1px solid #ffffff;
+    border-width: 1px solid #ffffff;
+    animation: RGB 5s infinite ease-in-out;
+    margin: 0;
+
+}
+
+.Categorias li.Computadoras::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/COMPUTADORAS.jpg"); 
+    filter: brightness(0.6);
+    z-index: 0;
+}
+
+.Categorias li.Computadoras:hover{
+    border: 3px solid #ffffff;
+    animation: RGB 5s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.Categorias li.Laptops:hover{
+    border: 3px solid #ffffff;
+    animation: RGB 5s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.Categorias li.Perifericos:hover{
+    border: 3px solid #ffffff;
+    animation: RGB 5s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.Categorias li.Telefonos:hover{
+    border: 3px solid #ffffff;
+    animation: RGB 5s infinite ease-in-out;
+    cursor: pointer;
+}
+
+.Categorias li.Laptops::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/laptops.avif");
+    filter: brightness(0.6); 
+    z-index: 0;
+}
+
+.Categorias li.Perifericos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/perifericos.jpg");
+    filter: brightness(0.6);
+    z-index: 0;
+}
+
+.Categorias li.Telefonos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/telefonos.png");
+    filter: brightness(0.6);
+    z-index: 0;
+}
+
+.Categorias li a {
+    color: white;
+    font-weight: 900;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.BotonFlotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 10));
+    background-image: linear-gradient(to bottom, rgb(6, 205, 255), rgb(4, 135, 168), rgb(6, 205, 255));
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.BotonFlotante a ion-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.Contacto {
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #abe2fd, #E0F2FB, #abe2fd)
+}
+
+.InformacionContacto {
+    margin: 0 auto;
+    max-width: 1850px;
+}
+
+.TextoContacto {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.ImagenContacto img {
+    width: 100%;
+    border-radius: 40px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+}
+
+.Formulario {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 1850px;
+    margin: 0 auto;
+}
+
+.Texto {
+    width: 500px;
+    height: 30px;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #000000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+.Formulario ion-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.TextoMensaje {
+    width: 500px;
+    height: 100px;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #000000;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+}
+
+@keyframes RGB3 {
+    0% {
+        background-color: rgb(61, 3, 218);
+    }
+    20% {
+        background-color: rgb(91, 208, 255); 
+    }
+    40% {
+        background-color: rgb(0, 0, 255); 
+    }
+    60% {
+        background-color: rgb(86, 77, 204); 
+    }
+    80% {
+        background-color: rgb(0, 255, 255); 
+    }
+    100% {
+        background-color: rgb(15, 58, 197); 
+    }
+} 
+
+@keyframes BlackWhite {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    20% {
+        color: rgb(0, 0, 0);
+    }
+    40% {
+        color: rgb(255, 255, 255);
+    }
+    60% {
+        color: rgb(255, 255, 255);
+    }
+    80% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+} 
+
+.BotonRegistrar {
+    background-color: rgb(61, 3, 218);
+    animation: RGB3 10s infinite ease-in-out;
+}
+
+.BotonRegistrar a {
+    color: white;
+    animation: BlackWhite 10s infinite ease-in-out;
+}
+
+.mapa {
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
