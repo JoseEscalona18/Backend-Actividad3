@@ -1,0 +1,29 @@
+{
+  "name": "backend-actividad3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseEscalona18/Backend-Actividad3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseEscalona18/Backend-Actividad3/issues"
+  },
+  "homepage": "https://github.com/JoseEscalona18/Backend-Actividad3#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "debug": "^4.3.4",
+    "dotenv": "^16.1.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.22"
+  }
+}
