@@ -24,7 +24,7 @@ create table Operadores(
 );
 
 create table Productos(
-	IdProducto mediumint not null primary key,
+	IdProducto mediumint not null primary key auto_increment,
     NombreProducto varchar(100) not null,
     Modelo varchar(50) not null,
     Marca varchar(50) not null,
@@ -41,7 +41,7 @@ create table Inventario(
 );
 
 create table Ventas(
-	IdVenta smallint not null primary key,
+	IdVenta smallint not null primary key auto_increment,
 	NombreCliente varchar(100) not null,
     CedulaCliente mediumint not null,
     MontoTotal bigint not null
@@ -55,3 +55,10 @@ create table DetalleVentas(
     Cantidad smallint not null
 );
 
+create table ServicioReparacion(
+	IdServicio mediumint not null primary key auto_increment,
+    Nombre char(100) not null,
+	Correo char(100) not null,
+	Equipo char(100) not null,
+	Mensaje char(250) not null
+);
