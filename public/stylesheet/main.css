@@ -231,10 +231,11 @@ footer p {
     margin-bottom: 8px;
 }
 
-.Productosdestacados img:hover {
-    width: 200px;
-    height: 200px;
+.Productosdestacados li:hover {
+    transform: scale(1.1);
     filter: drop-shadow(2px 2px 6px rgba(255, 255, 255, 0.5));
+    transition: transform 0.3s ease;
+
 }
 
 .Productosdestacados ul {
@@ -320,29 +321,12 @@ footer p {
     z-index: 0;
 }
 
-.Categorias li.Computadoras:hover{
+.Categorias li:hover{
     border: 3px solid #ffffff;
     animation: RGB 5s infinite ease-in-out;
     cursor: pointer;
 }
 
-.Categorias li.Laptops:hover{
-    border: 3px solid #ffffff;
-    animation: RGB 5s infinite ease-in-out;
-    cursor: pointer;
-}
-
-.Categorias li.Perifericos:hover{
-    border: 3px solid #ffffff;
-    animation: RGB 5s infinite ease-in-out;
-    cursor: pointer;
-}
-
-.Categorias li.Telefonos:hover{
-    border: 3px solid #ffffff;
-    animation: RGB 5s infinite ease-in-out;
-    cursor: pointer;
-}
 
 .Categorias li.Laptops::before {
     content: "";
