@@ -3,10 +3,6 @@ var router = express.Router();
 
 var controller =  require('../controllers/indexcontroller.js')
 
-router.get('/', function(req, res, next) {
-  res.render('index');
-});
-
 router.post(
     '/', 
 
@@ -21,6 +17,18 @@ router.post(
     })
 
 });
+
+router.get(
+  '/',
+  function(req, res) { 
+    controller.ListarDestacados()
+    .then((resultado)=>{
+      res.render('index', {"JSON": JSON.stringify(resultado)});
+    })
+    .catch((err)=>{
+      res.send(err)
+    })
+  });
 
 
 

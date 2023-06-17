@@ -29,8 +29,9 @@ create table Productos(
     Modelo varchar(50) not null,
     Marca varchar(50) not null,
     Detalles varchar (300),
-    Estatus varchar (50) not null,
-    Foto blob not null
+    Precio varchar(50),
+    Estatus varchar(50) not null,
+    Foto varchar(200) not null
 );
 
 create table Inventario(
@@ -62,3 +63,10 @@ create table ServicioReparacion(
 	Equipo char(100) not null,
 	Mensaje char(250) not null
 );
+
+INSERT INTO `productos`(`IdProducto`, `NombreProducto`, `Modelo`, `Marca`, `Detalles`, `Precio`, `Estatus`, `Foto`) VALUES
+('1', 'Mouse Redragon Cobra M711', 'Cobra M711', 'Redragon', '8 Botones, Conexión USB, DPI mínimo 100, Frecuencia de respuesta 125 Hz / 1.000 Hz, Modelo de sensor Pixart P3360 óptico, DPI máximo 24.000, Frecuencia de respuesta 125 Hz / 1.000 Hz, Peso 105 g.\r\n', '25,00', 'Activo', 'images/Mouse2.png'), 
+('2', 'HP H220S Audífonos Gamer', 'H220S', 'HP', 'Conexión de audio de 3.5 mm, Compatibilidad: PS4, Xbox One, Switch y PC, Micrófono omnidireccional, flxible y ajustable con cancelación de ruido, Doble vincha ajustable, Control de volumen incorporado.', '50,00', 'Activo', 'images/Audifonos4.jpg'),
+('3', 'Procesador AMD Ryzen 5 2gen', 'Ryzen 5', 'AMD', '6 Nucleos, 12 Hilos, Hasta 4.4GHz, Caché L2 total\r\n3MB, Caché L3 total 16MB, Paquete AM4', '150,00', 'Activo', 'images/Ryzen5-2gen'),
+('4', 'Memoria RAM DDR4', 'F4-3200C16D-16GTZR', 'G.Skill', '8GB, PC4 25600, DDR43200MHz', '40,00', 'Activo', 'images/MemoriaRam1.jpg'),
+('5', 'Audifonos Gamer Logitech G332', 'G332', 'Logitech', 'Color Negro, Tecnología de conectividad Wired, Series Logitech G332 Stereo Gaming Headset for PC, PS4, Xbox One, Nintendo Switch, Factor de forma Over Ear', '85,00', 'Activo', 'images/Audifonos1.jpg');

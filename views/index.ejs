@@ -64,48 +64,19 @@
 	
 					<h2>Productos destacados</h2>
 	
-					<ul>
-						<li onclick="window.location.href='#'"><button>←</button></li>
-	
-						<li onclick="window.location.href='#'">
-	
-							<img src="images/Mouse2.png" alt="Producto 1">
-							<a>Mouse Redragon Cobra M711<br><b>Precio $25,00</b></a>
-	
-						</li>
-	
-						<li onclick="window.location.href='#'">
-	
-							<img src="images/Audifonos4.jpg" alt="Producto 2">
-							<a>HP H220S Audífonos Gamer<br><b>Precio $50,00</b></a>
-	
-						</li>
-	
-						<li onclick="window.location.href='#'">
-	
-							<img src="images/Ryzen5-2gen" alt="Producto 3">
-							<a>Procesador AMD Ryzen 5 2gen<br><b>Precio $150,00</b></a>
-	
-						</li>
-	
-						<li onclick="window.location.href='#'">
-	
-							<img src="images/MemoriaRam1.jpg" alt="Producto 4">
-							<a>Memoria RAM DDR4 8GB<br><b>Precio $40,00</b></a>
-	
-						</li>
-	
-						<li onclick="window.location.href='#'">
-	
-							<img src="images\Audifonos1.jpg" alt="Producto 5">
-							<a>Audifonos Gamer Logitech G332<br><b>Precio $85,00</b></a>
-	
-						</li>
-	
-						<li onclick="window.location.href='#'"><button>→</button></li>
-					</ul>
+						<div style="display: flex; align-items: center; justify-content:center;">
+
+							<button id="BotonIzquierda">←</button>
+							<ul id="DatosDestacado">
+
+
+							</ul>
+							<button id="BotonDerecha">→</button>
+
+						</div>
+						
 				</div>
-				<a class="MostrarMas" href="productos.html">Mostrar mas productos</a>
+				<a class="MostrarMas" href="/productos">Mostrar mas productos</a>
 
 			</section>
 	
@@ -186,14 +157,41 @@
 				<a><ion-icon name="cart-outline"></ion-icon></a>
 			</button>
 	
+
+
 		</main>
 	
 		<footer>
 			<p>Derechos reservados &copy; 2023 Tienda de tecnología</p>
 		</footer>
+
+
+		<p id="DatosExtraidos"> <%= JSON %> </p>
+		<script>
+			let res = document.getElementById("DatosDestacado")
+		  	let Datosjson = JSON.parse(document.getElementById("DatosExtraidos").innerText)
+		  	res.innerHTML = ""
+
+
+		  	let contador = 0
+
+		  	for(let item of Datosjson){
+			contador = contador + 1
+			res.innerHTML += `
 	
+				<li onclick="window.location.href='#'" class="Productos">
+		
+					<img src="${item.Foto}" alt="Producto ${contador}">
+					<a>${item.NombreProducto}<br><b>Precio ${item.Precio}$</b></a>
+
+				</li>
+				`
+		  	}
+		</script>
 		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
 	</body>
 
 </html>

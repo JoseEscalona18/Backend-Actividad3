@@ -212,13 +212,12 @@ footer p {
 
 .Productosdestacados {
     overflow: hidden;
-    max-width: 1500px;
-    width: 80%;
+    max-width: 100%;
     margin: auto;
     text-align: center;
     color: white;
     padding: 15px;
-    justify-content:center;
+    justify-content: center;
 }
 
 .Productosdestacados img {
@@ -242,12 +241,12 @@ footer p {
     display: flex;
     align-items: center;
     justify-content:center;
-    width: 100%;
 }
 
 .Productosdestacados li {
     margin: 10px;
     cursor: pointer;
+    display: inline-block;
 }
 
 .Productosdestacados a {
@@ -512,3 +511,7 @@ footer p {
     padding-top: 0;
     padding-bottom: 0;
 }
+
+
+
+

@@ -27,6 +27,17 @@ class FormularioSQL {
         );
         })
     }
+
+    Listar(){
+        return new Promise((resolve, reject)=>{
+
+            conection.query('SELECT * from Productos', function (error, results, fields) {
+                if (error) throw error;
+                resolve(results);
+            });
+
+        })
+    }
 }
 
 const ClaseFormulario = new FormularioSQL();

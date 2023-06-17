@@ -18,6 +18,20 @@ class FormularioIndexController {
         })
     }
 
+
+    ListarDestacados(){
+        return new Promise ((resolve, reject)=>{
+            FormularioSQL.Listar()
+            .then((resultado)=>{
+                resolve (resultado)
+            })
+            .catch((err)=>{
+              reject(err)
+            });
+        })
+
+    }
+
 }
 
 const ControladorIndex = new FormularioIndexController()
