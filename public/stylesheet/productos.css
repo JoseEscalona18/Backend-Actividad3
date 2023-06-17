@@ -160,10 +160,10 @@ main section h2{
     margin-bottom: 8px;
 }
 
-.ListaProductos li img:hover {
-    width: 270px;
-    height: 270px;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));  
+.ListaProductos li:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(2px 2px 6px rgba(255, 255, 255, 0.5));
+    transition: transform 0.3s ease; 
 }
 
 .ListaProductos li a {
