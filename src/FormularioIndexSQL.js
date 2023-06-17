@@ -22,7 +22,6 @@ class FormularioSQL {
             function (error, results, fields){
                 if(error) throw error;
                 console.log('Se ha guardado el registro');
-                console.log(results);
                 resolve(DatosFormulario)
             }
         );
