@@ -10,14 +10,13 @@ router.get('/', function(req, res, next) {
 router.post(
   '/', 
   function(req, res){
-    console.log(req.body)
-      let DatosRegistrar = req.body;
-      controller.Agregar(DatosRegistrar)
-      .then((resultado)=>{
-      res.render('registrar');
-      })
-      .catch((err)=>{
-      res.send(err)
+    let DatosRegistrar = req.body;
+    controller.Agregar(DatosRegistrar)
+    .then((resultado)=>{
+    res.render('registrar');
+    })
+    .catch((err)=>{
+    res.send(err)
   })
 
 });

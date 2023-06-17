@@ -7,7 +7,6 @@ class RegistrarController {
             if (!DatosRegistrar.Nombre || !DatosRegistrar.Cedula || !DatosRegistrar.Correo || !DatosRegistrar.Usuario || !DatosRegistrar.Contrasena) {
                 return resolve("Compruebe uno de los datos a ingresar");
             }
-            console.log("asdajdshaj")
             RegistrarSQL.Agregar(DatosRegistrar)
             .then((resultado)=>{
                 resolve (resultado)
