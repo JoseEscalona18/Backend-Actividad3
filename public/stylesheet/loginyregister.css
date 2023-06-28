@@ -287,3 +287,172 @@ footer {
 footer p {
     margin: 0;
 }
+
+.BotonRegistrar {
+    background-color: rgb(61, 3, 218);
+    animation: RGB3 10s infinite ease-in-out;
+}
+
+.selectheader{
+    display: none;
+}
+
+.NavPC{
+    display: flex;
+    gap:20px;
+}
+
+.img1 {
+    display: inline-block;
+  }
+
+.img2 {
+    display: none;
+}
+@media (max-width: 768px){
+
+    .NavHeader input {
+        width: 120px;
+    }
+
+    .EscaTech-Logo{
+        width: 110px;
+    }
+
+}
+
+
+@media (max-width: 425px){
+
+    main{
+        margin-left: 0;
+        border: 0;
+    }
+    .BarraLateral{
+        display: none;
+    }
+
+    .NavPC{
+        display: none;
+    }
+
+    .selectheader{
+        display:block;
+        width: 90px;
+        border-radius: 10px;
+    }
+    .NavHeader input {
+        width: 100px;
+    }
+    .NavHeader ul {
+        margin-right: 0;
+    }
+
+    .RegistrarLista{
+        color: white;
+        background-color: rgb(61, 3, 218);
+        animation: RGB3 10s infinite ease-in-out;
+    }
+
+    .img1 {
+
+        display: none;
+    }
+    
+    .img2 {
+        display: inline-block;
+        width: 25px;
+    }
+
+    .centro2{
+        scale: 0.9;
+        text-align: center;
+    }
+
+    .cajastexto {
+        scale: 0.9;
+        width: 350px;
+    }
+
+    .centro2 button{
+        width: 90%;
+    }
+
+    .centro{
+        scale: 0.9;
+        text-align: center;
+    }
+    
+    .centro button{
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    main{
+        margin-left: 0;
+        border: 0;
+    }
+    .BarraLateral{
+        display: none;
+    }
+
+    .NavPC{
+        display: none;
+    }
+
+    .selectheader{
+        display:block;
+        width: 90px;
+        border-radius: 10px;
+    }
+    .NavHeader input {
+        width: 100px;
+    }
+    .NavHeader ul {
+        margin-right: 0;
+    }
+
+    .RegistrarLista{
+        color: white;
+        background-color: rgb(61, 3, 218);
+        animation: RGB3 10s infinite ease-in-out;
+    }
+
+    .img1 {
+
+        display: none;
+    }
+    
+    .img2 {
+        display: inline-block;
+        width: 25px;
+    }
+
+    .centro2{
+        scale: 0.9;
+        text-align: center;
+    }
+
+    .centro2 button{
+        width: 90%;
+    }
+
+    .centro{
+        scale: 0.9;
+        text-align: center;
+    }
+    
+    .centro button{
+        width: 90%;
+    }
+
+    .cajastexto {
+        scale: 0.9;
+        width: 270px;
+    }
+
+
+}

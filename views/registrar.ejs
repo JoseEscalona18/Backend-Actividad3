@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Ingresar a EscaTech CA</title>
 		<link rel="icon" href="images/eCA.png">
         <link rel="stylesheet" href="stylesheet/loginyregister.css">
@@ -14,31 +15,45 @@
     <body>
 
         <header>
+	
+			<div class="EscaTech-Logo">
+				<a href="/"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA" class="img1"> </a>
+				<a href="/"> <img src="images/eCA.png" alt="Logo EscaTech CA" class="img2"> </a>
+			</div>
+	
+			<nav class="NavHeader">
+				<ul>
+					<li>
 
-            <div class="EscaTech-Logo">
-                <a href="/"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA"> </a>
-            </div>
+						<ion-icon name="search-outline"></ion-icon>
+						<input type="text" placeholder="Buscar" style="text-indent: 10px;">
 
-            <nav class="NavHeader">
-                <ul>
-                    <li>
-                        <ion-icon name="search-outline"></ion-icon>
-                        <input type="text" placeholder="Buscar" style="text-indent: 10px;">
-                    </li>
+					</li>
+	
+					<select class="selectheader" onchange="window.location.href = this.value;" id="selectheader">
+                        <option value="/registrar" class="RegistrarLista"> Registrar </option>
+						<option value="/"> Inicio </option>
+						<option value="/productos" > Productos</option>
+						<option value="#" > Contacto </option>
+						<option value="/ingresar" > Acceder </option>
+					</select>
 
-                    <li> <a href="/">Inicio</a> </li>
+					<div class="NavPC">
+						<li> <a href="/">Inicio</a> </li>
+	
+						<li> <a href="/productos">Productos</a> </li>
+		
+						<li> <a href="#">Contacto</a> </li>
+		
+						<li> <button><a href="/ingresar">Acceder</a></button> </li>
+		
+						<li> <button class="BotonRegistrar"><a href="/registrar">Registrar</a></button></li>
 
-                    <li> <a href="/productos">Productos</a> </li>
-
-                    <li> <a href="#">Contacto</a> </li>
-
-                    <li> <button><a href="/ingresar">Acceder</a></button> </li>
-                    
-                    <li> <button class="BotonRegistrar"><a href="/registrar">Registrar</a></button></li>
-                </ul>
-            </nav>
-
-        </header>
+					</div>
+				</ul>
+			</nav>
+			
+		</header>
 
         <main>
 

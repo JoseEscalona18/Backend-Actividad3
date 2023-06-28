@@ -283,11 +283,6 @@ footer p {
     animation: RGB3 10s infinite ease-in-out;
 }
 
-.BotonRegistrar a {
-    color: white;
-    animation: BlackWhite 10s infinite ease-in-out;
-}
-
 .selectheader{
     display: none;
 }
