@@ -287,3 +287,138 @@ footer p {
     color: white;
     animation: BlackWhite 10s infinite ease-in-out;
 }
+
+.selectheader{
+    display: none;
+}
+
+.NavPC{
+    display: flex;
+    gap:20px;
+}
+
+.img1 {
+    display: inline-block;
+  }
+
+.img2 {
+    display: none;
+}
+
+@media (max-width: 1024px){
+
+    .BarraLateral{
+        width: 150px;
+    }
+
+    .BarraLateral ul a {
+        padding-left: 20px;
+        color: white;
+    }
+
+    main {
+        margin-left: 170px;
+    }
+
+    .NavHeader ul {
+        margin-right: 0;
+    }
+
+    .NavHeader input {
+        width: 100px;
+    }
+    .EscaTech-Logo{
+        width: 120px;
+    }
+
+    .ListaProductos li {
+        margin: 10px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width: 30%;
+    }
+
+    .ListaProductos li img {
+        width: 150px;
+        height: 150px;
+        border: 4px solid rgb(61, 3, 218);
+        animation: RGB 5s infinite ease-in-out;
+        border-radius: 20px;
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+        margin-bottom: 8px;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 425px){
+
+    .ListaProductos li img {
+        width: 75px;
+        height: 75px;
+        border: 4px solid rgb(61, 3, 218);
+        animation: RGB 5s infinite ease-in-out;
+        border-radius: 20px;
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));
+        margin-bottom: 8px;
+    }
+
+    .ListaProductos li {
+        margin: 10px;
+        cursor: pointer;
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        width: 40%;
+    }
+
+    .ListaProductos li {
+        font-size: 10px;
+    }
+    
+    main{
+        margin-left: 0;
+        border: 0;
+    }
+    .BarraLateral{
+        display: none;
+    }
+
+    .NavPC{
+        display: none;
+    }
+
+    .selectheader{
+        display:block;
+        width: 90px;
+        border-radius: 10px;
+    }
+    .NavHeader input {
+        width: 100px;
+    }
+    .NavHeader ul {
+        margin-right: 0;
+    }
+
+    .RegistrarLista{
+        color: white;
+        background-color: rgb(61, 3, 218);
+        animation: RGB3 10s infinite ease-in-out;
+    }
+
+    .img1 {
+
+        display: none;
+    }
+    
+    .img2 {
+        display: inline-block;
+        width: 25px;
+    }
+    
+}

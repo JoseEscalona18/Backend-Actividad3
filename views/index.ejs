@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>EscaTech CA</title>
 		<link rel="icon" href="images/eCA.png">
 		<link rel="stylesheet" href="stylesheet/main.css">
@@ -14,13 +15,13 @@
 	<body>
 
 		<header>
+	
 			<div class="EscaTech-Logo">
-
-				<a href="/"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA"> </a>
-				
+				<a href="/"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA" class="img1"> </a>
+				<a href="/"> <img src="images/eCA.png" alt="Logo EscaTech CA" class="img2"> </a>
 			</div>
-
-			<nav>
+	
+			<nav class="NavHeader">
 				<ul>
 					<li>
 
@@ -29,18 +30,29 @@
 
 					</li>
 	
-					<li> <a href="/">Inicio</a> </li>
+					<select class="selectheader" onchange="window.location.href = this.value;" id="selectheader">
+						<option value="/productos" > Productos</option>
+						<option value="/"> Inicio </option>
+						<option value="/contacto" > Contacto </option>
+						<option value="/ingresar" > Acceder </option>
+						<option value="/registrar" class="RegistrarLista"> Registrar </option>
+					</select>
+
+					<div class="NavPC">
+						<li> <a href="/">Inicio</a> </li>
 	
-					<li> <a href="/productos">Productos</a> </li>
-	
-					<li> <a href="#">Contacto</a> </li>
-	
-					<li> <button><a href="/ingresar">Acceder</a></button></li>
-	
-					<li> <button class="BotonRegistrar"><a href="/registrar">Registrar</a></button></li>
+						<li> <a href="/productos">Productos</a> </li>
+		
+						<li> <a href="#">Contacto</a> </li>
+		
+						<li> <button><a href="/ingresar">Acceder</a></button> </li>
+		
+						<li> <button class="BotonRegistrar"><a href="/registrar">Registrar</a></button></li>
+
+					</div>
 				</ul>
 			</nav>
-
+			
 		</header>
 
 		<main>
@@ -112,6 +124,9 @@
 	
 							<td class="ImagenContacto"> <img src="images/Reparacion.webp" alt="Reparaciones"> </td>
 						</tr>
+						<tr>
+							<td class="ImagenContacto2"> <img src="images/Reparacion.webp" alt="Reparaciones"> </td>
+						</tr>
 					</table>
 
 				</div>
@@ -142,7 +157,7 @@
 	
 					</form>
 	
-					<div class="mapa">
+					<div style="display: none;">
 
 						<h2 style="margin-top: 0;">Nuestra ubicación</h2>
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62994.161199668335!2d-70.6560383693167!3d9.32129763203319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6328692ebdd3d5%3A0xd3d8efa5fb790d11!2sValera%2C%20Trujillo!5e0!3m2!1ses!2sve!4v1685988468476!5m2!1ses!2sve" width="550" height="350" style="border:0; border-radius: 30px; filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 1));" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -3,6 +3,7 @@
 
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Productos de EscaTech CA</title>
 		<link rel="icon" href="/images/eCA.png">
 		<link rel="stylesheet" href="stylesheet/productos.css">
@@ -16,7 +17,8 @@
 		<header>
 	
 			<div class="EscaTech-Logo">
-				<a href="/"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA"> </a>
+				<a href="/"> <img src="images/EscatechCA-B.png" alt="Logo EscaTech CA" class="img1"> </a>
+				<a href="/"> <img src="images/eCA.png" alt="Logo EscaTech CA" class="img2"> </a>
 			</div>
 	
 			<nav class="NavHeader">
@@ -28,15 +30,26 @@
 
 					</li>
 	
-					<li> <a href="/">Inicio</a> </li>
+					<select class="selectheader" onchange="window.location.href = this.value;" id="selectheader">
+						<option value="/productos" > Productos</option>
+						<option value="/"> Inicio </option>
+						<option value="/contacto" > Contacto </option>
+						<option value="/ingresar" > Acceder </option>
+						<option value="/registrar" class="RegistrarLista"> Registrar </option>
+					</select>
+
+					<div class="NavPC">
+						<li> <a href="/">Inicio</a> </li>
 	
-					<li> <a href="/productos">Productos</a> </li>
-	
-					<li> <a href="#">Contacto</a> </li>
-	
-					<li> <button><a href="/ingresar">Acceder</a></button> </li>
-	
-					<li> <button class="BotonRegistrar"><a href="/registrar">Registrar</a></button></li>
+						<li> <a href="/productos">Productos</a> </li>
+		
+						<li> <a href="#">Contacto</a> </li>
+		
+						<li> <button><a href="/ingresar">Acceder</a></button> </li>
+		
+						<li> <button class="BotonRegistrar"><a href="/registrar">Registrar</a></button></li>
+
+					</div>
 				</ul>
 			</nav>
 			
