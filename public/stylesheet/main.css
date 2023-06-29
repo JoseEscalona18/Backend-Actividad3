@@ -463,8 +463,6 @@ footer p {
     height: 20px;
 }
 
-
-
 @keyframes RGB3 {
     0% {
         background-color: rgb(61, 3, 218);
@@ -614,8 +612,43 @@ footer p {
 
 }
 
-
 @media (max-width: 425px){
+
+    .Productosdestacados button {
+        display: none;
+    }
+
+    .carousel {
+        width: 100%;
+        overflow-x: scroll;
+    }
+    
+    .carousel ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+      
+    .carousel li {
+        flex: 0 0 auto;
+        width: 25%;
+        margin-right: 10px;
+    }
+      
+    .carousel img {
+        width: 100%;
+        height: auto;
+    }
+      
+    .carousel a {
+        display: block;
+    }
+      
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
 
     .NavPC{
         display: none;
@@ -640,7 +673,6 @@ footer p {
     }
 
     .img1 {
-
         display: none;
     }
     
